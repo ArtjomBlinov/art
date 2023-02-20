@@ -1,0 +1,32 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+int main()
+{
+    /*   vector<int> sk{1,2,3,1,2};
+      int a, i = 0;
+      cin >> a;
+      do {
+
+          if (a == sk[i]) { cout << "element found!"; break; }
+
+          i++;
+      } while (i < sk.size()); /*/
+
+    int i = 0;
+    vector<string>sv{ " Convocation of the Constituent Assembly of the Republic of Latvia","Declaration of Independence of the Republic of Latvia","Proclamation of the Republic of Latvia","St. John's Day" };
+    vector<string>date{ "1 May","4 May","18 November","24 June" };
+    string input;
+    cin >> input;
+    do {
+        if (input == "yes")
+        {
+            cout << sv[i] << "  ";
+
+        }
+
+
+
+        i++;
+    } while (i < date.size());
+}
